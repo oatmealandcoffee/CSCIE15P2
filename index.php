@@ -1,3 +1,7 @@
+<?php
+require('pwgen.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,21 +17,43 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <style>
+        .password
+        {
+        	color: #A5351C;
+        	font-size: 300%;
+        	font-family: monospace;
+        }
+    </style>
+
 </head>
 <body>
 
 	<div class="jumbotron">
       <div class="container">
-        <h1>CSCI E-15 P2</h1>
-        <p></p>
+        <h1>The XKCD Password Generator</h1>
+        <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
       </div>
     </div>
 
     <div class="container">
 
-<p>
-Today, we celebrate the first glorious anniversary of the Information Purification Directives. We have created for the first time in all history, a garden of pure ideology. Where each worker may bloom secure from the pests of contradictory and confusing truths. Our Unification of Thoughts is more powerful a weapon than any fleet or army on earth. We are one people, with one will, one resolve, one cause. Our enemies shall talk themselves to death and we will bury them with their own confusion. We shall prevail!
-</p>
+        <div class="well">
+            <h2>Settings</h2>
+            <p>Form to go here</p>
+        </div>
+
+        <div class="well">
+            <h2>Password</h2>
+            <p class="password"><?=$generatedPassword;?></p>
+        </div>
+
+        <hr>
+
+        <h2>About</h2>
+        <p>Despite their ubiquity, passwords need to be difficult to crack by hackers, and creating passwords that are hard to crack and yet still easy to remember is a surprisingly hard thing to do. Randall Munroe of XKCD postulated an idea to create passwords that balance memorability and complexity by using words from the dictionary. To wit...</p>
+        <p><img src="http://imgs.xkcd.com/comics/password_strength.png"></p>
+
       <hr>
 
       <footer>
