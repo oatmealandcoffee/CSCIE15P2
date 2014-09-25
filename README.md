@@ -49,6 +49,7 @@ None known
 * 14\_09\_24\_01\_00\_000: Started source
 * 14\_09\_24\_01\_01\_000: Updated interface; Added `wordlist.php`; Added `pwgen.php`
 * 14\_09\_24\_01\_01\_001: Added basic form to interface
-* 14\_09\_24\_01\_01\_002: Added pulling of random word from $wordlist with global variables
+* 14\_09\_25\_01\_01\_002: Added pulling of random word from $wordlist with global variables
+* 14\_09\_25\_01\_01\_003: Added pulling of random word from $wordlist with scoped variables
 
-git add --all; git commit -m "STAMP"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_01_01_003"; git push origin master

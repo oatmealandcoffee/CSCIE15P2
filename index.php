@@ -1,7 +1,7 @@
 <?php
 include 'pwgen.php';
 
-//generatePassword();
+generatePassword();
 ?>
 
 <!DOCTYPE html>

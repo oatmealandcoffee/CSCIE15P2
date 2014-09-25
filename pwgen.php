@@ -12,10 +12,12 @@
 include 'wordlist.php';
 $generatedPassword = 'foo';
 $maxWords = 10;
-//generatePassword();
+generatePassword();
 
-//function generatePassword() {
+function generatePassword() {
+    global $wordlist;
     $len = count( $wordlist );
     $idx = rand( 0, $len - 1 );
+    global $generatedPassword;
     $generatedPassword = $wordlist[$idx];
-//}
+}
