@@ -9,6 +9,13 @@
  *
  */
 
-require('wordlist.php');
+include 'wordlist.php';
+$generatedPassword = 'foo';
+$maxWords = 10;
+//generatePassword();
 
-$generatedPassword = 'foobaroopack';
+//function generatePassword() {
+    $len = count( $wordlist );
+    $idx = rand( 0, $len - 1 );
+    $generatedPassword = $wordlist[$idx];
+//}

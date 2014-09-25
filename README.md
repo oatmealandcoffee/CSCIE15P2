@@ -24,21 +24,22 @@ None
 # Project Notes
 
 ## Roadmap
-* Create HTML view
-	* Title, Description, Explanation
-	* Input Form
-		* Word count option (pulldown menu)
-		* Include a number option (checkbox)
-		* Special symbol (checkbox)
-		* Uppercase the first letter of the password (checkbox)
-		* XTRA: Special character count
-		* XTRA: Specify delimiter or camelCase
-		* XTRA: Min/Max Length
-	* Output generated password
-* Word list management
-	* Read word list file
-	* XTRA: Scrape online word list 
-* Build password
+
+	> Create HTML view
+		X Title, Description, Explanation
+		X Input Form
+			X Word count option (pulldown menu)
+			X Include a number option (checkbox)
+			X Special symbol (checkbox)
+			> Uppercase the first letter of the password (checkbox)
+			* XTRA: Special character count
+			* XTRA: Specify delimiter or camelCase
+			* XTRA: Min/Max Length
+		> Output generated password
+	> Word list management
+		- Read word list file // changed to holding the list as a baked-in array
+		* XTRA: Scrape online word list 
+	* Build password
 
 ## Bugs
 None known
@@ -48,3 +49,4 @@ None known
 * 14\_09\_24\_01\_00\_000: Started source
 * 14\_09\_24\_01\_01\_000: Updated interface; Added `wordlist.php`; Added `pwgen.php`
 * 14\_09\_24\_01\_01\_001: Added basic form to interface
+* 14\_09\_24\_01\_01\_002: Added pulling of random word from $wordlist with global variables

@@ -1,12 +1,14 @@
 <?php
-require('pwgen.php');
+include 'pwgen.php';
+
+//generatePassword();
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Philip Regan</title>
+    <title>The XKCD Password Generator</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -40,14 +42,8 @@ require('pwgen.php');
 
         <div class="well">
             <h2>Settings</h2>
-            <form action="index.php" method="post">
-				Word Count:
-             <select id = "wordCount">
-               <option value = "1">1</option>
-               <option value = "2">2</option>
-               <option value = "3">3</option>
-               <option value = "4">4</option>
-             </select><br>
+            <form action="" method="post">
+				Word Count: <input type="text" name="wordCount" placeholder="4"> (Max words: <?=$maxWords;?>)<br>
 				Include Number: <input type="checkbox" name="includeNumber"><br>
 				Include Special Character: <input type="checkbox" name="includeSpecial"><br>
 				Uppercase First Character: <input type="checkbox" name="uppercaseFirst"><br>
