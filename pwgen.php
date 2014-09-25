@@ -10,14 +10,48 @@
  */
 
 include 'wordlist.php';
-$generatedPassword = 'foo';
 $maxWords = 10;
-generatePassword();
+$generatedPassword = '';
 
-function generatePassword() {
+generatePassword(4, false, false, false);
+
+/*
+ * Purpose: builds the password to the given specs
+ * Arguments:
+ *  wordCount: Integer, number of words to use
+ *  includeNumber: Boolean, include a number in the password
+ *  includeSpecial: Boolean, include a special character
+ *  uppercaseFirst: Boolean, include a special character
+ * Returns: None
+ */
+function generatePassword( $wordCount, $includeNumber, $includeSpecial, $uppercaseFirst )
+{
+    global $generatedPassword;
+    global $maxWords;
+
+    if ( $wordCount < 1 ) {
+        $wordCount = 1;
+    }
+    if ( $wordCount > $maxWords ) {
+        $wordCount = $maxWords;
+    }
+
+    $generatedPassword = '';
+    for ( $w = 0 ; $w < $wordCount ; $w = $w + 1 ) {
+        $generatedPassword = $generatedPassword . ' ' . getWordFromList();
+    }
+
+}
+
+/*
+ * Purpose: gets a random word from the source word list
+ * Arguments: None
+ * Returns: String
+ */
+function getWordFromList()
+{
     global $wordlist;
     $len = count( $wordlist );
     $idx = rand( 0, $len - 1 );
-    global $generatedPassword;
-    $generatedPassword = $wordlist[$idx];
+    return $wordlist[$idx];
 }

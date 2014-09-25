@@ -35,11 +35,13 @@ None
 			* XTRA: Special character count
 			* XTRA: Specify delimiter or camelCase
 			* XTRA: Min/Max Length
+		* Form input validation
 		> Output generated password
 	> Word list management
 		- Read word list file // changed to holding the list as a baked-in array
 		* XTRA: Scrape online word list 
 	* Build password
+		* Change build to be array-based then use join before output
 
 ## Bugs
 None known
@@ -51,5 +53,7 @@ None known
 * 14\_09\_24\_01\_01\_001: Added basic form to interface
 * 14\_09\_25\_01\_01\_002: Added pulling of random word from $wordlist with global variables
 * 14\_09\_25\_01\_01\_003: Added pulling of random word from $wordlist with scoped variables
+* 14\_09\_25\_01\_01\_003: Added function to handle pulling a word from the word list
+* 14\_09\_25\_01\_01\_004: Update generatePassword function to accept variables
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_01_01_003"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_01_01_004"; git push origin master
