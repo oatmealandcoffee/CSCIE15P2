@@ -40,7 +40,19 @@ require('pwgen.php');
 
         <div class="well">
             <h2>Settings</h2>
-            <p>Form to go here</p>
+            <form action="index.php" method="post">
+				Word Count:
+             <select id = "wordCount">
+               <option value = "1">1</option>
+               <option value = "2">2</option>
+               <option value = "3">3</option>
+               <option value = "4">4</option>
+             </select><br>
+				Include Number: <input type="checkbox" name="includeNumber"><br>
+				Include Special Character: <input type="checkbox" name="includeSpecial"><br>
+				Uppercase First Character: <input type="checkbox" name="uppercaseFirst"><br>
+			<input type="submit">
+			</form>
         </div>
 
         <div class="well">
@@ -51,7 +63,7 @@ require('pwgen.php');
         <hr>
 
         <h2>About</h2>
-        <p>Despite their ubiquity, passwords need to be difficult to crack by hackers, and creating passwords that are hard to crack and yet still easy to remember is a surprisingly hard thing to do. Randall Munroe of XKCD postulated an idea to create passwords that balance memorability and complexity by using words from the dictionary. To wit...</p>
+        <p>Passwords need to be difficult to crack by hackers yet still easy to remember, which is a surprisingly hard thing to create. Randall Munroe of XKCD postulated an idea to create passwords that balance memorability and complexity by using words from the dictionary. To wit...</p>
         <p><img src="http://imgs.xkcd.com/comics/password_strength.png"></p>
 
       <hr>

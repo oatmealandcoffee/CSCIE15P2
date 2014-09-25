@@ -47,3 +47,4 @@ None known
 
 * 14\_09\_24\_01\_00\_000: Started source
 * 14\_09\_24\_01\_01\_000: Updated interface; Added `wordlist.php`; Added `pwgen.php`
+* 14\_09\_24\_01\_01\_001: Added basic form to interface
