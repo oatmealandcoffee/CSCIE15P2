@@ -42,10 +42,10 @@ require 'pwgen.php';
         <div class="well">
             <h2>Settings</h2>
             <form action="index.php" method="GET">
-				Word Count: <input type="text" name="word_count" value="4"> (Max words: <?=$maxWords;?>)<br>
-				Include Number: <input type="checkbox" name="include_number"><br> (Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.)<br>
-				Include Special Character: <input type="checkbox" name="include_special"><br>
-				Uppercase First Character: <input type="checkbox" name="uppercase_first"> (Words in source word list may already capitalized.)<br>
+				Word Count: <input type="text" name="word_count" value="<?php echo ($wordCount ? $wordCount : $defaultWords); ?>"> (Max words: <?=$maxWords;?>)<br>
+				Include Number: <input type="checkbox" name="include_number" <?php echo ($includeNumber ? 'checked' : ''); ?>> (Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.)<br>
+				Include Special Character: <input type="checkbox" name="include_special" <?php echo ($includeSpecial ? 'checked' : ''); ?>><br>
+				Uppercase First Character: <input type="checkbox" name="uppercase_first" <?php echo ($uppercaseFirst ? 'checked' : ''); ?>> (Words in source word list may already capitalized.)<br>
 			<input type="submit">
 			</form>
         </div>

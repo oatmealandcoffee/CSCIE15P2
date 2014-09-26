@@ -66,5 +66,6 @@ None known
 * 14\_09\_25\_02\_00\_000: Added special character list; Added GET to form; Added form value capture; Added form value validation; Updated interface with option information
 * 14\_09\_25\_02\_01\_001: Fixed bug in handling random number special addition
 * 14\_09\_25\_02\_02\_000: Added special character on selection; Minor formatting update to index.php
+* 14\_09\_25\_02\_03\_000: Added populating of password parameters captured from query string
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_02_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_03_000"; git push origin master
