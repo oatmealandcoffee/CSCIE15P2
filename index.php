@@ -1,7 +1,6 @@
 <?php
-include 'pwgen.php';
+require 'pwgen.php';
 
-generatePassword(4, false, false, false);
 ?>
 
 <!DOCTYPE html>
@@ -42,11 +41,11 @@ generatePassword(4, false, false, false);
 
         <div class="well">
             <h2>Settings</h2>
-            <form action="" method="post">
-				Word Count: <input type="text" name="wordCount" placeholder="4"> (Max words: <?=$maxWords;?>)<br>
-				Include Number: <input type="checkbox" name="includeNumber"><br>
-				Include Special Character: <input type="checkbox" name="includeSpecial"><br>
-				Uppercase First Character: <input type="checkbox" name="uppercaseFirst"><br>
+            <form action="index.php" method="GET">
+				Word Count: <input type="text" name="word_count" value="4"> (Max words: <?=$maxWords;?>)<br>
+				Include Number: <input type="checkbox" name="include_number"><br> (Randomly selected between 1000-9999.)
+				Include Special Character: <input type="checkbox" name="include_special"><br>
+				Uppercase First Character: <input type="checkbox" name="uppercase_first"> (Words in source word list may already capitalized.)<br>
 			<input type="submit">
 			</form>
         </div>

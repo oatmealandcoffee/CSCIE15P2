@@ -9,39 +9,41 @@
  *
  */
 
-include 'wordlist.php';
+require 'wordlist.php';
+$defaultWords = 4;
 $maxWords = 10;
-$generatedPassword = '';
 
-generatePassword(4, false, false, false);
+// word_count value | 0
+// include_number on | null
+// include_special on | null
+// uppercase_first on | null
 
-/*
- * Purpose: builds the password to the given specs
- * Arguments:
- *  wordCount: Integer, number of words to use
- *  includeNumber: Boolean, include a number in the password
- *  includeSpecial: Boolean, include a special character
- *  uppercaseFirst: Boolean, include a special character
- * Returns: None
- */
-function generatePassword( $wordCount, $includeNumber, $includeSpecial, $uppercaseFirst )
-{
-    global $generatedPassword;
-    global $maxWords;
+/* capture the form values */
 
+$wordCount = $_GET['word_count'];
+$includeNumber = $_GET['include_number'];
+$includeSpecial = $_GET['include_special'];
+$uppercaseFirst = $_GET['uppercase_first'];
+
+/* validate form values */
+
+if ( is_numeric( $wordCount ) == false ) {
+    $word_count = $defaultWords;
+} else {
     if ( $wordCount < 1 ) {
-        $wordCount = 1;
-    }
-    if ( $wordCount > $maxWords ) {
+        $wordCount = $defaultWords;
+    } elseif ( $wordCount > $maxWords ) {
         $wordCount = $maxWords;
     }
-
-    $generatedPassword = '';
-    for ( $w = 0 ; $w < $wordCount ; $w = $w + 1 ) {
-        $generatedPassword = $generatedPassword . ' ' . getWordFromList();
-    }
-
 }
+
+$passwordBuffer = array();
+
+for ( $word = 0 ; $word < $wordCount ; $word++ ) {
+    array_push( $passwordBuffer, getWordFromList() );
+}
+
+$generatedPassword = join( ' ', $passwordBuffer );
 
 /*
  * Purpose: gets a random word from the source word list
