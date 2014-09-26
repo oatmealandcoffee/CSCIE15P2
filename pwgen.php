@@ -10,8 +10,12 @@
  */
 
 require 'wordlist.php';
+
+/* global values */
 $defaultWords = 4;
 $maxWords = 10;
+$minNumber = 1000;
+$maxNumber = 9999;
 
 // word_count value | 0
 // include_number on | null
@@ -37,11 +41,21 @@ if ( is_numeric( $wordCount ) == false ) {
     }
 }
 
+/* build the password */
+
 $passwordBuffer = array();
 
 for ( $word = 0 ; $word < $wordCount ; $word++ ) {
     array_push( $passwordBuffer, getWordFromList() );
 }
+
+/* handle the special cases */
+
+if ( $includeNumber == 'on' ) {
+    array_push( $minNumber, $maxNumber );
+}
+
+/* prep for output */
 
 $generatedPassword = join( ' ', $passwordBuffer );
 
