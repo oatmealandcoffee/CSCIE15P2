@@ -62,6 +62,6 @@ None known
 * 14\_09\_25\_01\_01\_003: Added function to handle pulling a word from the word list
 * 14\_09\_25\_01\_01\_004: Update generatePassword function to accept variables
 * 14\_09\_25\_02\_00\_000: Added special character list; Added GET to form; Added form value capture; Added form value validation; Updated interface with option information
-* 14\_09\_25\_02\_01\_000: Added appending of random number; added global min and max number values
+* 14\_09\_25\_02\_01\_001: Fixed bug in handling random number special addition
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_01_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_01_001"; git push origin master

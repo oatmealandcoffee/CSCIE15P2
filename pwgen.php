@@ -51,8 +51,9 @@ for ( $word = 0 ; $word < $wordCount ; $word++ ) {
 
 /* handle the special cases */
 
-if ( $includeNumber == 'on' ) {
-    array_push( $minNumber, $maxNumber );
+if ( $includeNumber ) {
+    $r = rand( $minNumber, $maxNumber );
+    array_push( $passwordBuffer, $r );
 }
 
 /* prep for output */
