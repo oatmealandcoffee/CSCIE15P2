@@ -7,7 +7,7 @@ require 'pwgen.php';
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>The XKCD Password Generator</title>
+    <title>eXperimental Knotty Credential Developer</title>
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -30,15 +30,16 @@ require 'pwgen.php';
 </head>
 <body>
 
-	<div class="jumbotron">
+	<!--<div class="jumbotron">
       <div class="container">
-        <h1>The XKCD Password Generator</h1>
+        <h1>eXperimental<br>Knotty<br>Credential<br>Developer*</h1>
         <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
       </div>
-    </div>
+    </div>-->
 
     <div class="container">
-
+        <h1>eXperimental<br>Knotty<br>Credential<br>Developer*</h1>
+        <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
         <div class="well">
             <h2>Settings</h2>
             <form action="index.php" method="GET">
@@ -58,11 +59,11 @@ require 'pwgen.php';
         <hr>
 
         <h2>About</h2>
-        <p>Passwords need to be created such that they are difficult to crack by hackers yet still easy to remember, which is a surprisingly hard thing to do. Randall Munroe of XKCD postulated (but did not endorse; a subtle but important distinction) an idea to create passwords that balance memorability and complexity by using words from the dictionary. To wit...</p>
+        <p>Passwords need to be created such that they are difficult to crack by hackers yet still easy to remember, which is a surprisingly hard thing to do. Randall Munroe of <a href="http://www.xkcd.com">XKCD</a>  postulated (but did not endorse; a subtle but important distinction) an idea to create passwords that balance memorability and complexity by using words from the dictionary by virtue of their length. To wit...</p>
         <p><img src="http://imgs.xkcd.com/comics/password_strength.png"></p>
 
       <hr>
-
+        <p>* Get it? e<u>X</u>perimental <u>K</u>notty <u>C</u>redential <u>D</u>eveloper? XKCD? Get it? See, it's funny because it's a password generator based on an XKCD comic and the title of the page is based on the letters of the comic that spawned the idea.</p>
       <footer>
         <p>Copyright &copy; 2014 Philip Regan. All rights reserved. All wrongs revenged.</p>
       </footer>
