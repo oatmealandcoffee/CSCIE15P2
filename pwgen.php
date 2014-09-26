@@ -61,9 +61,15 @@ if ( $includeSpecial ) {
     array_push( $passwordBuffer, $specialCharList[$rc] );
 }
 
+if ( $uppercaseFirst ) {
+    $passwordBuffer[0] = ucfirst( $passwordBuffer[0] );
+}
+
 /* prep for output */
 
 $generatedPassword = join( ' ', $passwordBuffer );
+
+
 
 /*
  * Purpose: gets a random word from the source word list

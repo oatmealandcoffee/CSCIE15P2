@@ -14,12 +14,17 @@ None
 
 # Test Requirements and Details
 <!-- Any details the instructor or TA needs to know, for example, test credentials. -->
-None
+Features of the generator include:
+* Select between 1-10 words
+* Append with a random number
+* Append with a random special character
+* Settings found in the query string are repopulated upon refresh
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
+* PHP created and edited with [PHPStorm](http://www.jetbrains.com/phpstorm/).
 * [Bootstrap used for the design](http://www.bootstrap.org)
-* All other code created and edited using [BBEdit](http://www.barebones.com/products/bbedit/) and [PHPStorm](http://www.jetbrains.com/phpstorm/).
+* HTML and CSS created and edited with [BBEdit](http://www.barebones.com/products/bbedit/)
 
 # Project Notes
 
@@ -31,7 +36,7 @@ None
 			X Word count option (pulldown menu)
 			X Include a number option (checkbox)
 			X Special symbol (checkbox)
-			> Uppercase the first letter of the password (checkbox)
+			X Uppercase the first letter of the password (checkbox)
 			* XTRA: Special character count
 			* XTRA: Specify delimiter or camelCase
 			* XTRA: Min/Max Length
@@ -47,7 +52,7 @@ None
 		X Get words
 		X Add number on selection
 		X add special character on selection
-		* Uppercase first letter
+		X Uppercase first letter
 		X Join
 		X Output generated password
 
@@ -67,5 +72,6 @@ None known
 * 14\_09\_25\_02\_01\_001: Fixed bug in handling random number special addition
 * 14\_09\_25\_02\_02\_000: Added special character on selection; Minor formatting update to index.php
 * 14\_09\_25\_02\_03\_000: Added populating of password parameters captured from query string
+* 14\_09\_25\_02\_04\_000: Added making first character uppercase
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_03_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_04_000"; git push origin master
