@@ -14,10 +14,8 @@ None
 
 # Test Requirements and Details
 <!-- Any details the instructor or TA needs to know, for example, test credentials. -->
-Features of the generator include:
-* Select between 1-10 words
-* Append with a random number
-* Append with a random special character
+Extra Features of the generator include:
+* A password of four words is created by default, including upon loading the page without a query string
 * Settings found in the query string are repopulated upon refresh
 
 # Dependencies and Citations
@@ -73,5 +71,6 @@ None known
 * 14\_09\_25\_02\_02\_000: Added special character on selection; Minor formatting update to index.php
 * 14\_09\_25\_02\_03\_000: Added populating of password parameters captured from query string
 * 14\_09\_25\_02\_04\_000: Added making first character uppercase
+* 14\_09\_25\_02\_05\_000: Added generating password based on the default; updated readme
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_04_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_05_000"; git push origin master

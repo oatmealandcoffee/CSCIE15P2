@@ -13,6 +13,7 @@ require 'wordlist.php';
 
 /* global values */
 $defaultWords = 4;
+
 $maxWords = 10;
 $minNumber = 1000;
 $maxNumber = 9999;
@@ -30,15 +31,18 @@ $includeSpecial = $_GET['include_special'];
 $uppercaseFirst = $_GET['uppercase_first'];
 
 /* validate form values */
-
-if ( is_numeric( $wordCount ) == false ) {
-    $word_count = $defaultWords;
-} else {
-    if ( $wordCount < 1 ) {
-        $wordCount = $defaultWords;
-    } elseif ( $wordCount > $maxWords ) {
-        $wordCount = $maxWords;
+if ( $wordCount ) {
+    if ( is_numeric( $wordCount ) == false ) {
+        $word_count = $defaultWords;
+    } else {
+        if ( $wordCount < 1 ) {
+            $wordCount = $defaultWords;
+        } elseif ( $wordCount > $maxWords ) {
+            $wordCount = $maxWords;
+        }
     }
+} else {
+    $wordCount = $defaultWords;
 }
 
 /* build the password */
