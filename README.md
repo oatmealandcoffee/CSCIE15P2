@@ -46,7 +46,7 @@ None
 		X Validate form values
 		X Get words
 		X Add number on selection
-		> add special character on selection
+		X add special character on selection
 		* Uppercase first letter
 		X Join
 		X Output generated password
@@ -65,5 +65,6 @@ None known
 * 14\_09\_25\_01\_01\_004: Update generatePassword function to accept variables
 * 14\_09\_25\_02\_00\_000: Added special character list; Added GET to form; Added form value capture; Added form value validation; Updated interface with option information
 * 14\_09\_25\_02\_01\_001: Fixed bug in handling random number special addition
+* 14\_09\_25\_02\_02\_000: Added special character on selection; Minor formatting update to index.php
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_01_001"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_25_02_02_000"; git push origin master

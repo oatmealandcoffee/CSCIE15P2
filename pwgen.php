@@ -52,8 +52,13 @@ for ( $word = 0 ; $word < $wordCount ; $word++ ) {
 /* handle the special cases */
 
 if ( $includeNumber ) {
-    $r = rand( $minNumber, $maxNumber );
-    array_push( $passwordBuffer, $r );
+    $rn = rand( $minNumber, $maxNumber );
+    array_push( $passwordBuffer, $rn );
+}
+
+if ( $includeSpecial ) {
+    $rc = rand( 0, count( $specialCharList ) - 1 );
+    array_push( $passwordBuffer, $specialCharList[$rc] );
 }
 
 /* prep for output */
