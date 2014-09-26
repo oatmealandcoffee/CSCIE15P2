@@ -41,13 +41,15 @@ None
 		* XTRA: Scrape online word list 
 	* Build password
 		X Move build password out of the function 
-		* Change build to be array-based then use join before output
-		* Capture form values
-		* Validate form values
-		* Get words
-		* Add specials
-		* Join
-		* Output generated password
+		X Change build to be array-based then use join before output
+		X Capture form values
+		X Validate form values
+		X Get words
+		X Add number on selection
+		> add special character on selection
+		* Uppercase first letter
+		X Join
+		X Output generated password
 
 ## Bugs
 None known
