@@ -78,5 +78,6 @@ None known
 * 14\_09\_26\_02\_06\_000: Added joining built passwords with user-defined delimiter
 * 14\_09\_26\_02\_07\_000: Moved styles to external style sheet for separation of concerns
 * 14\_09\_26\_02\_08\_000: Added converting password to "camelCase"
+* 14\_09\_26\_02\_09\_000: Added table layout to form
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_08_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_09_000"; git push origin master

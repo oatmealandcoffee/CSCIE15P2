@@ -1,3 +1,22 @@
+.form_label
+{
+	text-align: right;
+	padding: 5px;
+	font-weight: bold;
+}
+
+.form_entry
+{
+    text-align: left;
+    padding: 5px;
+}
+
+.form_inst
+{
+    text-align: left;
+    padding: 5px;
+}
+
 .password
 {
     color: #A5351C;

@@ -28,13 +28,44 @@ require 'pwgen.php';
         <div class="well">
             <h2>Settings</h2>
             <form action="index.php" method="GET">
-				Word Count: <input type="text" name="word_count" value="<?php echo ($wordCount ? $wordCount : $defaultWords); ?>"> (Max words: <?=$maxWords;?>)<br>
-				Include Number: <input type="checkbox" name="include_number" <?php echo ($includeNumber ? 'checked' : ''); ?>> (Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.)<br>
-				Include Special Character: <input type="checkbox" name="include_special" <?php echo ($includeSpecial ? 'checked' : ''); ?>><br>
-				Uppercase First Character: <input type="checkbox" name="uppercase_first" <?php echo ($uppercaseFirst ? 'checked' : ''); ?>> (Words in source word list may already capitalized.)<br>
-                Delimiter: <input type="text" name="delimiter" value="<?php echo ($userDelimiter ? $userDelimiter : '' ); ?>"> (A space is the default)<br>
-                Use camelCase: <input type="checkbox" name="camelCase" <?php echo ($camelCase ? 'checked' : ''); ?>> (Overrides delimiter and first uppercase)<br>
-                <input type="submit">
+                <table>
+                    <tr>
+                        <td class="form_label">Word Count</td>
+                        <td class="form_entry"><input type="text" name="word_count" value="<?php echo ($wordCount ? $wordCount : $defaultWords); ?>"></td>
+                        <td class="form_inst">Max words: <?=$maxWords;?></td>
+                    </tr>
+                    <tr>
+                        <td class="form_label">Include Number</td>
+                        <td class="form_entry"><input type="checkbox" name="include_number" <?php echo ($includeNumber ? 'checked' : ''); ?>></td>
+                        <td class="form_inst">Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.</td>
+                    </tr>
+                    <tr>
+                        <td class="form_label">Include Special Character</td>
+                        <td class="form_entry"><input type="checkbox" name="include_special" <?php echo ($includeSpecial ? 'checked' : ''); ?>></td>
+                        <td class="form_inst"></td>
+                    </tr>
+                    <tr>
+                        <td class="form_label">Uppercase First Character</td>
+                        <td class="form_entry"><input type="checkbox" name="uppercase_first" <?php echo ($uppercaseFirst ? 'checked' : ''); ?>></td>
+                        <td class="form_inst">Words in source word list may already capitalized.</td>
+                    </tr>
+                    <tr>
+                        <td class="form_label">Delimiter</td>
+                        <td class="form_entry"><input type="text" name="delimiter" value="<?php echo ($userDelimiter ? $userDelimiter : '' ); ?>"></td>
+                        <td class="form_inst">A space is the default</td>
+                    </tr>
+                    <tr>
+                        <td class="form_label">Use camelCase</td>
+                        <td class="form_entry"><input type="checkbox" name="camelCase" <?php echo ($camelCase ? 'checked' : ''); ?>></td>
+                        <td class="form_inst">Overrides delimiter and first uppercase</td>
+                    </tr>
+                    <tr>
+                        <td class="form_label"></td>
+                        <td class="form_entry"><button type="submit">Create password</button></td>
+                        <td class="form_inst"></td>
+                    </tr>
+                </table>
+
 			</form>
         </div>
 
