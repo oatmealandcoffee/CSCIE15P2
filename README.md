@@ -74,5 +74,6 @@ None known
 * 14\_09\_25\_02\_05\_000: Added generating password based on the default; updated readme
 * 14\_09\_26\_02\_05\_001: Updated project title and add explanatory notes for the joke that doesn't really need explanatory notes. If we can't have a bit of fun with our school projects, then what the hell is the point?
 * 14\_09\_26\_02\_06\_000: Added joining built passwords with user-defined delimiter
+* 14\_09\_26\_02\_07\_000: Moved styles to external style sheet for separation of concerns
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_06_000"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_07_000"; git push origin master

@@ -18,27 +18,12 @@ require 'pwgen.php';
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-    <style>
-        .password
-        {
-        	color: #A5351C;
-        	font-size: 300%;
-        	font-family: monospace;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
 <body>
-
-	<!--<div class="jumbotron">
-      <div class="container">
-        <h1>eXperimental<br>Knotty<br>Credential<br>Developer*</h1>
-        <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
-      </div>
-    </div>-->
-
     <div class="container">
-        <h1>eXperimental<br> Knotty<br> Credential<br> Developer*</h1>
+        <h1>eXperimental Knotty Credential Developer*</h1>
         <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
         <div class="well">
             <h2>Settings</h2>
