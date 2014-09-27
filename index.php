@@ -77,7 +77,7 @@ require 'pwgen.php';
         <hr>
 
         <h2>About</h2>
-        <p>Passwords need to be created such that they are difficult to crack by hackers yet still easy to remember, which is a surprisingly hard thing to do. Randall Munroe of <a href="http://www.xkcd.com">XKCD</a>  postulated (but did not endorse; a subtle but important distinction) an idea to create passwords that balance memorability and complexity by using words from the dictionary by virtue of their length. To wit...</p>
+        <p>Passwords need to be created such that they are difficult to crack by hackers yet still easy to remember, which is a surprisingly hard thing to do. Randall Munroe of <a href="http://www.xkcd.com">XKCD</a> postulated (but did not endorse; a subtle but important distinction) an idea to create passwords by stringing words from the dictionary. Ostensibly, this balances memorability because of their potential familiarity, and complexity simply by virtue of their combined length. To wit...</p>
         <p><img src="http://imgs.xkcd.com/comics/password_strength.png"></p>
 
       <hr>
