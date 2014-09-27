@@ -17,6 +17,7 @@ None
 Extra Features of the generator include:
 * A password of four words is created by default, including upon loading the page without a query string
 * Settings found in the query string are repopulated upon refresh
+* The user can define a delimiter string to join password components
 
 # Dependencies and Citations
 <!--A list of any plugins, libraries, packages or outside code used in the project. See Student Responsibilities for more details on avoiding code plagiarism.-->
