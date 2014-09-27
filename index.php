@@ -38,7 +38,7 @@ require 'pwgen.php';
     </div>-->
 
     <div class="container">
-        <h1>eXperimental<br>Knotty<br>Credential<br>Developer*</h1>
+        <h1>eXperimental<br> Knotty<br> Credential<br> Developer*</h1>
         <p>An easy-to-use password generator based on randomly selected words from the English language.</p>
         <div class="well">
             <h2>Settings</h2>
@@ -47,7 +47,8 @@ require 'pwgen.php';
 				Include Number: <input type="checkbox" name="include_number" <?php echo ($includeNumber ? 'checked' : ''); ?>> (Randomly selected between <?=$minNumber;?>–<?=$maxNumber;?>.)<br>
 				Include Special Character: <input type="checkbox" name="include_special" <?php echo ($includeSpecial ? 'checked' : ''); ?>><br>
 				Uppercase First Character: <input type="checkbox" name="uppercase_first" <?php echo ($uppercaseFirst ? 'checked' : ''); ?>> (Words in source word list may already capitalized.)<br>
-			<input type="submit">
+                Delimiter: <input type="text" name="delimiter" value="<?php echo ($userDelimiter ? $userDelimiter : $defaultDelimiter); ?>"> (A space is the default)<br>
+                <input type="submit">
 			</form>
         </div>
 

@@ -17,6 +17,7 @@ $defaultWords = 4;
 $maxWords = 10;
 $minNumber = 1000;
 $maxNumber = 9999;
+$defaultDelimiter = ' ';
 
 // word_count value | 0
 // include_number on | null
@@ -29,6 +30,7 @@ $wordCount = $_GET['word_count'];
 $includeNumber = $_GET['include_number'];
 $includeSpecial = $_GET['include_special'];
 $uppercaseFirst = $_GET['uppercase_first'];
+$userDelimiter = $_GET['delimiter'];
 
 /* validate form values */
 if ( $wordCount ) {
@@ -71,7 +73,12 @@ if ( $uppercaseFirst ) {
 
 /* prep for output */
 
-$generatedPassword = join( ' ', $passwordBuffer );
+if ( $userDelimiter ) {
+    $generatedPassword = join( $userDelimiter, $passwordBuffer );
+} else {
+    $generatedPassword = join( $defaultDelimiter, $passwordBuffer );
+}
+
 
 
 
