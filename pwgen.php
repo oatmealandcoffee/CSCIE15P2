@@ -31,6 +31,7 @@ $includeNumber = $_GET['include_number'];
 $includeSpecial = $_GET['include_special'];
 $uppercaseFirst = $_GET['uppercase_first'];
 $userDelimiter = $_GET['delimiter'];
+$camelCase = $_GET['camelCase'];
 
 /* validate form values */
 if ( $wordCount ) {
@@ -71,13 +72,27 @@ if ( $uppercaseFirst ) {
     $passwordBuffer[0] = ucfirst( $passwordBuffer[0] );
 }
 
-/* prep for output */
+/* handle delimiters immediately prior to output */
 
-if ( $userDelimiter ) {
-    $generatedPassword = join( $userDelimiter, $passwordBuffer );
+if ( $camelCase ) {
+
+    $lastComponent = count( $passwordBuffer );
+    for ( $c = 0 ; $c < $lastComponent ; $c++ ) {
+        $passwordBuffer[$c] = strtolower( $passwordBuffer[$c] );
+        if ( $c > 0 ) {
+            $passwordBuffer[$c] = ucfirst( $passwordBuffer[$c] );
+        }
+    }
+    $generatedPassword = join( '', $passwordBuffer );
+
 } else {
-    $generatedPassword = join( $defaultDelimiter, $passwordBuffer );
+    if ( $userDelimiter ) {
+        $generatedPassword = join( $userDelimiter, $passwordBuffer );
+    } else {
+        $generatedPassword = join( $defaultDelimiter, $passwordBuffer );
+    }
 }
+
 
 
 
