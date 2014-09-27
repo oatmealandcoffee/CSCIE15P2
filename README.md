@@ -80,5 +80,6 @@ None known
 * 14\_09\_26\_02\_08\_000: Added converting password to "camelCase"
 * 14\_09\_26\_02\_09\_000: Added table layout to form
 * 14\_09\_26\_02\_09\_001: Minor edits to the About section
+* 14\_09\_26\_02\_10\_000: Added sanitization of user input for HTML. This PHP calls neither the shell nor uses MySQL
 
-cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_09_001"; git push origin master
+cd /Applications/MAMP/htdocs/CSCIE15P2; git add --all; git commit -m "14_09_26_02_10_000"; git push origin master

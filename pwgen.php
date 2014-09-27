@@ -30,7 +30,7 @@ $wordCount = $_GET['word_count'];
 $includeNumber = $_GET['include_number'];
 $includeSpecial = $_GET['include_special'];
 $uppercaseFirst = $_GET['uppercase_first'];
-$userDelimiter = $_GET['delimiter'];
+$userDelimiter = sanitizeUserInput($_GET['delimiter']);
 $camelCase = $_GET['camelCase'];
 
 /* validate form values */
@@ -93,10 +93,6 @@ if ( $camelCase ) {
     }
 }
 
-
-
-
-
 /*
  * Purpose: gets a random word from the source word list
  * Arguments: None
@@ -108,4 +104,15 @@ function getWordFromList()
     $len = count( $wordlist );
     $idx = rand( 0, $len - 1 );
     return $wordlist[$idx];
+}
+
+/*
+ * Purpose: Removes characters common to code
+ * Arguments: String
+ * Returns: String
+ */
+function sanitizeUserInput( $input ) {
+
+    return htmlentities( $input );
+
 }
