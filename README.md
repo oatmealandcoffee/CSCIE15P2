@@ -1,4 +1,4 @@
-# Project: CSCI E-15 P1
+# Project: CSCI E-15 P2
 **Philip Regan**
 
 # Live URL
@@ -10,7 +10,7 @@ A password generator based on [the "correct horse battery staple example from XK
 
 # Demo information
 <!-- If you attend your section to do an in-person demo, make a note of this. If you opt to do the Jing screencast demo, include the link here .-->
-None	
+I will do an in-person demo the Thursday before this is due.
 
 # Test Requirements and Details
 <!-- Any details the instructor or TA needs to know, for example, test credentials. -->
@@ -30,21 +30,21 @@ Extra Features of the generator include:
 
 ## Roadmap
 
-	> Create HTML view
+	X Create HTML view
 		X Title, Description, Explanation
 		X Input Form
 			X Word count option (pulldown menu)
 			X Include a number option (checkbox)
 			X Special symbol (checkbox)
 			X Uppercase the first letter of the password (checkbox)
-			* XTRA: Special character count
-			* XTRA: Specify delimiter or camelCase
-			* XTRA: Min/Max Length
-		* Form input validation
+			- XTRA: Special character count
+			X XTRA: Specify delimiter or camelCase
+			- XTRA: Min/Max Length
+		X Form input validation
 	> Word list management
-		- Read word list file // changed to holding the list as a baked-in array
-		* XTRA: Scrape online word list 
-	* Build password
+		- Read word list file // changed to holding the list as a baked-in array for speed
+		- XTRA: Scrape online word list
+	X Build password
 		X Move build password out of the function 
 		X Change build to be array-based then use join before output
 		X Capture form values
